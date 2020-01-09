@@ -3,6 +3,11 @@ def decimal2binary(n):
     if n:
         return decimal2binary(n//2) + str(n%2)
     return ''
+def dec2oct(n):
+    n = int(n)
+    if n:
+        return dec2oct(n//8) + str(n%8)
+    return ''
 print(ord('a'))
 print(chr(97))
 '''
@@ -30,6 +35,8 @@ print(hex(26))
 '''
 
 print(decimal2binary('2'))
+print(dec2oct('15'))
 '''
 10
+17
 '''
